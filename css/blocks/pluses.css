@@ -1,0 +1,7 @@
+.pluses {
+  display: flex;
+}
+
+.pluses__elem {
+  width: calc(100% / 3 - 26px);
+}

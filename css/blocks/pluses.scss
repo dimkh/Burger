@@ -1,0 +1,23 @@
+.pluses {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pluses__elem {
+  width: calc(100% / 3 - 26px);
+}
+
+.pluses__elem--title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.6;
+  @include lifehack();
+}
+
+.pluses__elem--description {
+  opacity: .8;
+  font-size: 14px;
+  line-height: 24px;
+  @include ubuntu(light);
+}

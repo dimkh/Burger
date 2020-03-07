@@ -1,0 +1,24 @@
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+
+@import "./layout/normalize.scss";
+@import "./layout/fonts.scss";
+@import "./layout/layout.scss";
+
+
+@import "./blocks/section.scss";
+@import "./blocks/welcome.scss";
+@import "./blocks/header.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/burger.scss";
+@import "./blocks/scroll-down.scss";
+@import "./blocks/features-section.scss";
+@import "./blocks/pluses.scss";
+@import "./blocks/feature.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/eater.scss";
+@import "./blocks/review.scss";

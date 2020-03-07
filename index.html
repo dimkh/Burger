@@ -1,12 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Натуральные бургеры</title>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
+
+
 <body>
-  <h1>Привет!!!</h1>
-  <h3>Тестовый заголовок</h3>
+  <div class="wrapper">
+    <section class="section section--align-top welcome">
+      <div class="container welcome__container">
+        <header class="header">
+          <div class="logo">
+            <img src="./img/main/logo.svg" alt="Логотип" class="logo__img">
+          </div>
+          <div class="header__btns">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Бургеры</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Команда</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Меню</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="#" class="btn">Заказать</a>
+          </div>
+        </header>
+        <div class="burger">
+          <img src="./img/main/burger_drops.png" alt="Обычный бургер" class="burger__img">
+          <div class="burger__description">
+            <h1 class="burger__description--we-doing section__title">Мы делаем</h1>
+            <div class="burger__description--natural"> натуральные бургеры</div>
+          </div>
+        </div>
+        <button type="button" class="scroll-down">
+          <img src="./img/main/arrow-scroll.png" alt="Scroll" class="scroll-down__pic">
+        </button>
+      </div>
+    </section>    
+
+    <section class="section features-section">
+      <div class="container">
+        <h2 class="section__title section__title--centered section__title--color-black">Мы лучшие</h2>
+        <ul class="pluses">
+          <li class="pluses__elem feature">
+            <div class="feature__img">
+              <img src="./img/better/meat.svg" alt="Мясо" class="pluses__elem--img">
+            </div>
+            <h3 class="pluses__elem--title">100% свежее мясо</h3>
+            <p class="pluses__elem--description">
+              Наше мясо - самое мясистое мясо в мире! Попробуй раз - захочешь пивас! Мясо бегало, мычало, да и к нам
+              уж прибежало. Чуть побольше написать - начинаем вновь считать.
+
+            </p>
+          </li>
+          <li class="pluses__elem feature">
+            <div class="feature__img">
+              <img src="./img/better/hand.svg" alt="Рука" class="pluses__elem--img">
+            </div>
+            <h3 class="pluses__elem--title">Ручная сборка</h3>
+            <p class="pluses__elem--description">Раз-два-три - и никакого мошенничества! Бургер у вас в руке, а соус на рукаве!</p>
+          </li>
+          <li class="pluses__elem feature">
+            <div class="feature__img">
+              <img src="./img/better/natural.svg" alt="Листочек" class="pluses__elem--img">
+            </div>
+            <h3 class="pluses__elem--title">Натуральные ингредиенты</h3>
+            <p class="pluses__elem--description">Мясо из леса, булка с поля, помидор с огорода... Вот только кетчуп с крахмалом - но это
+              тоже все натуральное!
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <ul class="eater">
+        <li class="eater__elem review">
+          <img src="./img/feedback/eater01.png" alt="Вкусивший бургер" class="eater__img review__pic">
+          <div class="eater__info review__hover">
+            <div class="eater__info--name">Константин Спилберг</div>
+            <p class="eater__info--feed">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+              что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </p>
+            <a href="#" class="btn btn__color-black">Подробнее</a>
+          </div>
+        </li>
+        <li class="eater__elem review">
+          <img src="./img/feedback/eater02.png" alt="Вкусивший бургер" class="eater__img review__pic">
+          <div class="eater__info review__hover">
+            <div class="eater__info--name">Константин Спилберг</div>
+            <p class="eater__info--feed">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+              что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </p>
+            <a href="#" class="btn btn__color-black">Подробнее</a>
+          </div>
+        </li>
+        <li class="eater__elem review">
+          <img src="./img/feedback/eater03.png" alt="Вкусивший бургер" class="eater__img review__pic">
+          <div class="eater__info review__hover">
+            <div class="eater__info--name">Константин Спилберг</div>
+            <p class="eater__info--feed">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+              что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </p>
+            <a href="#" class="btn btn__color-black">Подробнее</a>
+          </div>
+        </li>
+        <li class="eater__elem review">
+          <img src="./img/feedback/eater04.png" alt="Вкусивший бургер" class="eater__img review__pic">
+          <div class="eater__info review__hover">
+            <div class="eater__info--name">Константин Спилберг</div>
+            <p class="eater__info--feed">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+              что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </p>
+            <a href="#" class="btn btn__color-black">Подробнее</a>
+          </div>
+        </li>
+        <li class="eater__elem review">
+          <img src="./img/feedback/eater05.png" alt="Вкусивший бургер" class="eater__img review__pic">
+          <div class="eater__info review__hover">
+            <div class="eater__info--name">Константин Спилберг</div>
+            <p class="eater__info--feed">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+              что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </p>
+            <a href="#" class="btn btn__color-black">Подробнее</a>
+          </div>
+        </li>
+        <li class="eater__elem review">
+          <img src="./img/feedback/eater06.png" alt="Вкусивший бургер" class="eater__img review__pic">
+          <div class="eater__info review__hover">
+            <div class="eater__info--name">Константин Спилберг</div>
+            <p class="eater__info--feed">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+              что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </p>
+            <a href="#" class="btn btn__color-black">Подробнее</a>
+          </div>
+        </li>
+        <li class="eater__elem review">
+          <img src="./img/feedback/eater07.png" alt="Вкусивший бургер" class="eater__img review__pic">
+          <div class="eater__info review__hover">
+            <div class="eater__info--name">Константин Спилберг</div>
+            <p class="eater__info--feed">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+              что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </p>
+            <a href="#" class="btn btn__color-black">Подробнее</a>
+          </div>
+        </li>
+        <li class="eater__elem review">
+          <img src="./img/feedback/eater08.png" alt="Вкусивший бургер" class="eater__img review__pic">
+          <div class="eater__info review__hover">
+            <div class="eater__info--name">Константин Спилберг</div>
+            <p class="eater__info--feed">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+              что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </p>
+            <a href="#" class="btn btn__color-black">Подробнее</a>
+          </div>
+        </li>
+      </ul>
+
+    </section>
+  </div>
 </body>
 </html>

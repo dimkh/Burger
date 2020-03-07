@@ -1,0 +1,11 @@
+.welcome {
+  background: url("../img/main/bg_text.png") center center / cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+.welcome__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

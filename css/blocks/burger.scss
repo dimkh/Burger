@@ -1,0 +1,22 @@
+.burger {
+  display: flex;
+  align-items: center;
+  flex: .8;
+}
+
+.burger__description {
+  width: 50%;
+  padding-top: 94px;
+}
+
+.burger__description--natural {
+  font-size: 65px;
+  color: white;
+  line-height: 1.1;
+  @include lifehack();
+}
+
+.burger__img {
+  margin-right: 10px;
+}
+

@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  background: $orange;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 15px;
+  margin-left: 15px;
+
+  &__color-black {
+    background: $black;
+    margin-left: 0;
+  }
+}
