@@ -669,3 +669,44 @@ img {
   transition: 0.3s;
   padding: 50px 33px 50px 20px;
 }
+
+.radio {
+  position: fixed;
+  top: 90px;
+  right: 60px;
+}
+
+.radio__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radio__elem {
+  margin-bottom: 5px;
+}
+
+.radio__elem--link {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.radio__elem--link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
+
+.radio__active .radio__elem--link {
+  border-color: white;
+}
