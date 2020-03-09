@@ -530,11 +530,17 @@ img {
   font-size: 13px;
   font-weight: 500;
   padding: 10px 15px;
+}
+.btn--welcome {
   margin-left: 15px;
+}
+.btn--feedback {
+  color: white;
+  border-color: #2f3234;
+  border-style: none;
 }
 .btn__color-black {
   background: #2f3234;
-  margin-left: 0;
 }
 
 .burger {
@@ -568,20 +574,27 @@ img {
   background-color: transparent;
 }
 
-.features-section {
+.features {
   background: url("../img/better/bg.png") center center/cover no-repeat;
 }
 
-.pluses {
+.features__pluses {
   display: flex;
   justify-content: space-between;
 }
 
-.pluses__elem {
+.plus {
   width: calc(100% / 3 - 26px);
+  text-align: center;
 }
 
-.pluses__elem--title {
+.plus__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.plus__title {
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
@@ -589,7 +602,7 @@ img {
   font-family: "Lifehack-Medium";
 }
 
-.pluses__elem--description {
+.plus__description {
   opacity: 0.8;
   font-size: 14px;
   line-height: 24px;
@@ -597,68 +610,40 @@ img {
   font-weight: 300;
 }
 
-.feature {
-  text-align: center;
-}
-
-.feature__img {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.feedback {
+.feedback-section {
   background: black;
   height: 100vh;
   min-height: 650px;
 }
 
-.eater {
+.feedback {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
 }
 
-.eater__elem {
+.feedback__elem {
   width: 25%;
   height: 50%;
-}
-
-.eater__info--name {
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Gagalin-Regular", Helvetica, sans-serif;
-  margin-bottom: 25px;
-}
-
-.eater__info--feed {
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "Ubuntu", Helvetica, sans-serif;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-
-.review {
   position: relative;
   color: white;
 }
-.review:hover {
+.feedback__elem:hover {
   filter: grayscale(1);
 }
-.review:hover .review__hover {
+.feedback__elem:hover .feedback__info {
   opacity: 1;
   transform: scale(1);
 }
 
-.review__pic {
+.feedback__img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.review__hover {
+.feedback__info {
   position: absolute;
   top: 0;
   left: 0;
@@ -668,6 +653,21 @@ img {
   transform: scale(0.8);
   transition: 0.3s;
   padding: 50px 33px 50px 20px;
+}
+
+.feedback__info--name {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Gagalin-Regular", Helvetica, sans-serif;
+  margin-bottom: 25px;
+}
+
+.feedback__info--feed {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 
 .radio {

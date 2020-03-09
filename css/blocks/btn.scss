@@ -7,10 +7,18 @@
   font-size: 13px;
   font-weight: 500;
   padding: 10px 15px;
-  margin-left: 15px;
+
+  &--welcome {
+    margin-left: 15px;
+  }
+
+  &--feedback {
+    color: white;
+    border-color: $black;
+    border-style: none;
+  }
 
   &__color-black {
     background: $black;
-    margin-left: 0;
   }
 }

@@ -1,13 +1,15 @@
-.pluses {
-  display: flex;
-  justify-content: space-between;
-}
-
-.pluses__elem {
+.plus{
   width: calc(100% / 3 - 26px);
+  text-align: center;
 }
 
-.pluses__elem--title {
+.plus__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.plus__title {
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
@@ -15,7 +17,7 @@
   @include lifehack();
 }
 
-.pluses__elem--description {
+.plus__description {
   opacity: .8;
   font-size: 14px;
   line-height: 24px;
