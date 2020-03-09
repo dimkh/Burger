@@ -6,14 +6,16 @@
 
 .burger__description {
   width: 50%;
-  padding-top: 94px;
-}
+  padding-top: 120px;
 
-.burger__description--natural {
-  font-size: 65px;
-  color: white;
-  line-height: 1.1;
-  @include lifehack();
+  &--natural-burgers {
+    display: inline-block;
+    font-size: 65px;
+    color: white;
+    line-height: 1.1;
+    @include lifehack();
+    padding-top: 30px;
+  }
 }
 
 .burger__img {

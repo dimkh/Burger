@@ -551,14 +551,15 @@ img {
 
 .burger__description {
   width: 50%;
-  padding-top: 94px;
+  padding-top: 120px;
 }
-
-.burger__description--natural {
+.burger__description--natural-burgers {
+  display: inline-block;
   font-size: 65px;
   color: white;
   line-height: 1.1;
   font-family: "Lifehack-Medium";
+  padding-top: 30px;
 }
 
 .burger__img {
