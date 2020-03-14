@@ -25,3 +25,13 @@
     color: $black;
   }
 }
+
+.feedback-section {
+  background: black;
+  height: 100vh;
+  min-height: 650px;
+}
+
+.order-section {
+  background: url("../img/order/bg.jpg") center center / cover no-repeat;
+}

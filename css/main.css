@@ -468,6 +468,16 @@ img {
   color: #2f3234;
 }
 
+.feedback-section {
+  background: black;
+  height: 100vh;
+  min-height: 650px;
+}
+
+.order-section {
+  background: url("../img/order/bg.jpg") center center/cover no-repeat;
+}
+
 .welcome {
   background: url("../img/main/bg_text.png") center center/cover no-repeat;
   color: white;
@@ -539,7 +549,7 @@ img {
   border-color: #2f3234;
   border-style: none;
 }
-.btn__color-black {
+.btn--color-black {
   background: #2f3234;
 }
 
@@ -609,12 +619,6 @@ img {
   line-height: 24px;
   font-family: "Ubuntu", Helvetica, sans-serif;
   font-weight: 300;
-}
-
-.feedback-section {
-  background: black;
-  height: 100vh;
-  min-height: 650px;
 }
 
 .feedback {
@@ -710,4 +714,35 @@ img {
 
 .radio__active .radio__elem--link {
   border-color: white;
+}
+
+.order__row {
+  margin-bottom: 14px;
+  display: flex;
+}
+
+.order__block {
+  flex: 1;
+  margin-right: 20px;
+}
+.order__block:last-child {
+  margin-right: 0;
+}
+
+.order__title {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.order__input {
+  width: 100%;
+  padding: 8px 21px;
+  outline: none;
+  border: 1px solid #d1cfcb;
+  border-radius: 4px;
+  color: #2f3234;
+}
+.order__input:focus {
+  border: 2px solid #f9b43b;
+  padding: 7px 20px;
 }

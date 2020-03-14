@@ -1,0 +1,32 @@
+.order__row {
+  margin-bottom: 14px;
+  display: flex;
+}
+
+.order__block {
+  flex: 1;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.order__title {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.order__input {
+  width: 100%;
+  padding: 8px 21px;
+  outline: none;
+  border: 1px solid #d1cfcb;
+  border-radius: 4px;
+  color: $black;
+
+  &:focus {
+    border: 2px solid $yellow;
+    padding: 7px 20px;
+  }
+}
