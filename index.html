@@ -14,7 +14,9 @@
       <div class="container welcome__container">
         <header class="header">
           <div class="logo">
-            <img src="./img/main/logo.svg" alt="Логотип" class="logo__img">
+            <svg class="logo__icon">
+              <use xlink:href="./img/sprite/sprite.svg#icon-logo"></use>
+            </svg>
           </div>
           <div class="header__btns">
             <nav class="menu">
@@ -56,10 +58,9 @@
           </div>
         </div>
         <a href="#" class="scroll-down">
-          <!-- <svg class="scroll-down__icon">
+          <svg class="scroll-down__icon">
             <use xlink:href="./img/sprite/sprite.svg#icon-arrow-scroll"></use>
-          </svg> -->
-          <img src="./img/sprite/arrow-scroll.svg" alt="Scroll" class="scroll-down__pic">
+          </svg>
         </a>
       </div>
     </section>    
@@ -70,7 +71,9 @@
         <ul class="features__pluses">
           <li class="features__plus plus">
             <div class="plus__img">
-              <img src="./img/better/meat.svg" alt="Мясо" class="plus__img--img">
+              <svg class="plus__img--icon">
+                <use xlink:href="./img/sprite/sprite.svg#icon-meat"></use>
+              </svg>
             </div>
             <div class="plus__text">
               <h3 class="plus__text--title">100% свежее мясо</h3>
@@ -82,7 +85,9 @@
           </li>
           <li class="features__plus plus">
             <div class="plus__img">
-              <img src="./img/better/hand.svg" alt="Рука" class="plus__img--img">
+              <svg class="plus__img--icon">
+                <use xlink:href="./img/sprite/sprite.svg#icon-hand"></use>
+              </svg>
             </div>
             <div class="plus__text">
               <h3 class="plus__text--title">Ручная сборка</h3>
@@ -93,7 +98,9 @@
           </li>
           <li class="features__plus plus">
             <div class="plus__img">
-              <img src="./img/better/natural.svg" alt="Листочек" class="plus__img--img">
+              <svg class="plus__img--icon">
+                <use xlink:href="./img/sprite/sprite.svg#icon-natural"></use>
+              </svg>
             </div>
             <div class="plus__text">
               <h3 class="plus__text--title">Натуральные ингредиенты</h3>
@@ -183,17 +190,24 @@
           </a>
           <div class="menu-acco__content">
             <div class="menu-acco__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rerum impedit repellendus molestias quidem amet sit, suscipit autem maiores est odio, laborum error esse itaque incidunt sunt minus eaque optio.
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rerum impedit repellendus molestias quidem amet sit, suscipit autem maiores est odio, laborum error esse itaque incidunt sunt minus eaque optio.
+              </p>
             </div>
           </div>
         </li>
-        <li class="menu-acco__item">
+        <li class="menu-acco__item menu-acco__item-active">
           <a class="menu-acco__trigger" href="#" style="background-image: url('./img/menu/vegan.jpg')">
             <div class="menu-acco__trigger-text">Вегетарианское</div>
           </a>
           <div class="menu-acco__content">
             <div class="menu-acco__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus esse quos, hic accusamus laudantium dolorum. Quia veritatis iusto modi, assumenda, adipisci maxime, fugit fugiat nisi fuga minima odio! Fugiat, dignissimos!            
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus esse quos, hic accusamus laudantium dolorum. Quia veritatis iusto modi, assumenda, adipisci maxime, fugit fugiat nisi fuga minima odio! Fugiat, dignissimos!            
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus esse quos, hic accusamus laudantium dolorum. Quia veritatis iusto modi, assumenda, adipisci maxime, fugit fugiat nisi fuga minima odio! Fugiat, dignissimos!            
+              </p>
             </div>
           </div>
         </li>
@@ -203,7 +217,9 @@
           </a>
           <div class="menu-acco__content">
             <div class="menu-acco__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugit dolorum quibusdam omnis blanditiis ducimus dignissimos accusamus atque enim eaque architecto sequi esse quaerat modi quisquam, aliquid facere quidem quia.
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugit dolorum quibusdam omnis blanditiis ducimus dignissimos accusamus atque enim eaque architecto sequi esse quaerat modi quisquam, aliquid facere quidem quia.
+              </p>
             </div>
           </div>
         </li>
@@ -220,6 +236,7 @@
               что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
             </p>
             <button type="button" class="btn btn--feedback btn--color-black">Подробнее</button>
+            <button type="button" class="btn btn--feedback btn--feedback-phone btn--color-black">Читать отзыв</button>
           </div>
         </li>
         <li class="feedback__elem">
@@ -230,6 +247,7 @@
               что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
             </p>
             <button type="button" class="btn btn--feedback btn--color-black">Подробнее</button>
+            <button type="button" class="btn btn--feedback btn--feedback-phone btn--color-black">Читать отзыв</button>
           </div>
         </li>
         <li class="feedback__elem">
@@ -240,6 +258,7 @@
               что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
             </p>
             <button type="button" class="btn btn--feedback btn--color-black">Подробнее</button>
+            <button type="button" class="btn btn--feedback btn--feedback-phone btn--color-black">Читать отзыв</button>
           </div>
         </li>
         <li class="feedback__elem">
@@ -250,6 +269,7 @@
               что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
             </p>
             <button type="button" class="btn btn--feedback btn--color-black">Подробнее</button>
+            <button type="button" class="btn btn--feedback btn--feedback-phone btn--color-black">Читать отзыв</button>
           </div>
         </li>
         <li class="feedback__elem">
@@ -260,6 +280,7 @@
               что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
             </p>
             <button type="button" class="btn btn--feedback btn--color-black">Подробнее</button>
+            <button type="button" class="btn btn--feedback btn--feedback-phone btn--color-black">Читать отзыв</button>
           </div>
         </li>
         <li class="feedback__elem">
@@ -270,6 +291,7 @@
               что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
             </p>
             <button type="button" class="btn btn--feedback btn--color-black">Подробнее</button>
+            <button type="button" class="btn btn--feedback btn--feedback-phone btn--color-black">Читать отзыв</button>
           </div>
         </li>
         <li class="feedback__elem">
@@ -280,6 +302,7 @@
               что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
             </p>
             <button type="button" class="btn btn--feedback btn--color-black">Подробнее</button>
+            <button type="button" class="btn btn--feedback btn--feedback-phone btn--color-black">Читать отзыв</button>
           </div>
         </li>
         <li class="feedback__elem">
@@ -290,6 +313,7 @@
               что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
             </p>
             <button type="button" class="btn btn--feedback btn--color-black">Подробнее</button>
+            <button type="button" class="btn btn--feedback btn--feedback-phone btn--color-black">Читать отзыв</button>
           </div>
         </li>
       </ul>
@@ -382,46 +406,39 @@
             <div class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
             <a class="footer__phone" href="tel:+78123771377">+7 (812) 377-13-77</a>
           </div>
-          <div class="footer__col footer__col_right">
-            <ul class="socials">
-              <li class="socials__item">
-                <a class="socials__link" href="#">
-                  <div class="socials__link-icon">
-                    <img src="./img/sprite/vk.svg" alt="VK" class="socials__link-icon-img">
-                  </div>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link" href="#">
-                  <div class="socials__link-icon">
-                    <img src="./img/sprite/fb.svg" alt="FB" class="socials__link-icon-img">
-                  </div>
-                  <!-- <svg class="socials__link-icon" style="fill: #fff">
-                    <use xlink:href="./img/sprite/sprite.svg#fb"></use>
-                  </svg> -->
-                </a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link" href="#">
-                  <div class="socials__link-icon">
-                    <img src="./img/sprite/inst.svg" alt="Instagramm" class="socials__link-icon-img">
-                  </div>
-                  <!-- <svg class="socials__link-icon" style="fill: #fff">
-                    <use xlink:href="./img/sprite/sprite.svg#inst"></use>
-                  </svg> -->
-                </a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link" href="#">
-                  <div class="socials__link-icon">
-                    <img src="./img/sprite/twitter.svg" alt="Twitter" class="socials__link-icon-img">
-                  </div>
-                  <!-- <svg class="socials__link-icon" style="fill: #fff">
-                    <use xlink:href="./img/sprite/sprite.svg#twitter"></use>
-                  </svg> -->
-                </a>
-              </li>
-            </ul>
+          <div class="footer__col footer__col-right">
+            <div class="social__list">
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__link--icon">
+                      <use xlink:href="./img/sprite/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__link--icon">
+                      <use xlink:href="./img/sprite/sprite.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__link--icon">
+                      <use xlink:href="./img/sprite/sprite.svg#icon-inst"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__link--icon">
+                      <use xlink:href="./img/sprite/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer>

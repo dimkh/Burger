@@ -27,6 +27,10 @@
     width: 50%;
   }
 
+  @include phones {
+
+  }
+
 }
 
 .feedback__img {
@@ -51,6 +55,10 @@
     padding: 3% 12% 0;  
     text-align: center;
   }
+  
+  @include phones {
+    padding-top: 25%;
+  }
 }
 
 .feedback__info--name {
@@ -62,6 +70,11 @@
   @include tablets {
     margin-bottom: rem(10px);
   }
+
+  @include phones {
+    font-size: rem(24px);
+    margin-bottom: rem(32px);
+  }
 }
 
 .feedback__info--feed {
@@ -72,5 +85,9 @@
 
   @include tablets {
     line-height: rem(20px);
+  }
+
+  @include phones {
+    display: none;
   }
 }

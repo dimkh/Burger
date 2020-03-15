@@ -16,9 +16,22 @@
     color: white;
     border-color: $black;
     border-style: none;
+
+    @include phones {
+      display: none;
+    }
   }
 
   &--color-black {
     background: $black;
+  }
+}
+
+.btn--feedback-phone {
+  display: none;
+
+  @include phones {
+    display: inherit;
+    margin: 0 auto;
   }
 }

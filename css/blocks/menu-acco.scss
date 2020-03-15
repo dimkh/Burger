@@ -10,9 +10,21 @@
 	float: left;
 	height: 100%;
 
-	&.active {
+	&:hover {
 		.menu-acco__trigger-text {
 			color: $yellow;
+		}
+	}
+
+	&-active {
+		.menu-acco__trigger-text {
+			color: $yellow;
+		}		
+		.menu-acco__content {
+			width: rem(320px);
+		}
+		.menu-acco__text {
+			display: inherit;
 		}
 	}
 }

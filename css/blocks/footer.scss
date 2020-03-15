@@ -10,11 +10,12 @@
 
 .footer__container {
   display: flex;
-  flex-direction: row;
+	flex-direction: row;
+	justify-content: space-between;
   align-items: center;
 
   @include phones {
-    flex-direction: column;
+		flex-direction: column;
   }
 }
 
@@ -41,11 +42,13 @@
 	font-size: rem(14px);
 }
 
-.footer__col_right {
+.footer__col-right {
   text-align: right;
-  margin-bottom: 0;
+	margin-bottom: 0;
+	height: rem(20px);
 
 	@include phones {
 		text-align: center;
+		justify-content: center;
 	}
 }

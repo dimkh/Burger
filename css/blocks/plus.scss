@@ -24,6 +24,10 @@
   }
 }
 
+.plus__img--icon {
+  height: rem(85px);
+}
+
 .plus__text {
   @include phones {
     text-align: left;

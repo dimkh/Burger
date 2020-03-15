@@ -1,16 +1,24 @@
 
 .socials {
-	position: relative;
-	top: 50%;
+	// position: relative;
+	// top: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	@include phones {
+		justify-content: center;
+	}
 }
 
 .socials__item {
-	@include inlineblock(middle);
 	margin-left: rem(20px);
+	width: rem(20px);
+	height: rem(20px);
 }
 
 .socials__link {
-	display: inline-block;
+	// display: inline-block;
 	max-width: rem(23px);
 	max-height: rem(20px);
 	opacity: .3;
@@ -21,8 +29,8 @@
 	}
 }
 
-.socials__link-icon {
+.socials__link--icon {
   width: rem(20px);
   height: rem(20px);
-  fill: white;
+  // fill: white;
 }
