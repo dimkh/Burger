@@ -1,0 +1,16 @@
+.eat-menu {
+	background: url("../img/menu/menu.jpg") 50% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.eat-menu__title {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+
+	@include phones {
+		top: 7%;
+		left: 7%;	
+	}
+}

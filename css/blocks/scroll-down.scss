@@ -1,8 +1,12 @@
 .scroll-down {
   position: absolute;
-  bottom: 40px;
+  bottom: rem(40px);
   left: 50%;
   transform: translateX(-50%);
   border: transparent;
   background-color: transparent;
+}
+
+.icon-arrow-scroll {
+  width: rem(32px);
 }

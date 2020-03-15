@@ -1,24 +1,52 @@
 .burger {
+   display: flex;
+   align-items: center;
+   flex: .8;
+ }
+
+.burger__content {
   display: flex;
   align-items: center;
-  flex: .8;
+
+  @include tablets {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  @include phones {
+    padding: 0 2%;
+  }
 }
 
 .burger__description {
   width: 50%;
-  padding-top: 120px;
+  padding-top: rem(120px);
+
+  @include tablets {
+    width: auto;
+    text-align: center;
+    padding-top: rem(30px);
+  }
+
+  @include phones {
+    font-size: rem(48px);
+  }
 
   &--natural-burgers {
     display: inline-block;
-    font-size: 65px;
+    font-size: rem(65px);
     color: white;
     line-height: 1.1;
     @include lifehack();
-    padding-top: 30px;
+    padding-top: rem(30px);
+
+    @include phones {
+      font-size: rem(45px);
+    }
   }
 }
 
 .burger__img {
-  margin-right: 10px;
+  margin-right: rem(10px);
 }
 

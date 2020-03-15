@@ -1,13 +1,21 @@
+// Colors
 $orange: #e45028;
 $yellow: #f9b43b;
 $black: #2f3234;
 $red: #e35028;
 
+// Resolutions
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
 
 @import "./layout/normalize.scss";
 @import "./layout/fonts.scss";
+@import "./layout/media.scss";
+@import "./layout/mixins.scss";
 @import "./layout/layout.scss";
-
 
 @import "./blocks/section.scss";
 @import "./blocks/welcome.scss";
@@ -21,3 +29,11 @@ $red: #e35028;
 @import "./blocks/feedback.scss";
 @import "./blocks/radio.scss";
 @import "./blocks/order.scss";
+@import "./blocks/hamburger-menu-link.scss";
+@import "./blocks/team.scss";
+@import "./blocks/worker.scss";
+@import "./blocks/eat-menu.scss";
+@import "./blocks/menu-acco.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/socials.scss";

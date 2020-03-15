@@ -3,13 +3,13 @@
   background: $orange;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 13px;
+  border-radius: rem(5px);
+  font-size: rem(13px);
   font-weight: 500;
-  padding: 10px 15px;
+  padding: rem(10px) rem(15px);
 
   &--welcome {
-    margin-left: 15px;
+    margin-left: rem(15px);
   }
 
   &--feedback {

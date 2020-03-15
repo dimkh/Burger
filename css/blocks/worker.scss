@@ -1,0 +1,164 @@
+.worker {
+	@include tablets {
+		padding-bottom: rem(20px);
+	}
+}
+
+.worker__item {
+  margin-bottom: rem(40px);
+  
+  @include tablets {
+//		text-align: center;
+    margin-bottom: rem(30px);
+  }
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&--active {
+		.worker__name {
+			color: $yellow;
+
+			&:before {
+				transform: rotate(-180deg);
+			}
+		}
+
+		.worker__content-wrapper {
+			display: table;
+		}
+	}
+}
+
+.worker__name {
+	color: #fff;
+	font-size: rem(14px);
+	@include gagalin;
+	text-decoration: none;
+	position: relative;
+	display: block;
+	margin-bottom: rem(10px);
+
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	padding: 0;
+
+	&:before, &:after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: rem(-18px);
+		top: rem(8px);
+		width: 0;
+    height: 0;
+	}
+
+	&:before {
+		border-top: rem(7px) solid $yellow;
+		border-left: rem(5px) solid transparent;
+		border-right: rem(5px) solid transparent;
+		border-bottom: rem(0px) solid transparent;
+		transform: rotate(0deg);
+		transition: .3s;
+	}
+
+	&:after {
+		display: none;
+		border-bottom: rem(7px) solid $yellow;
+		border-left: rem(5px) solid transparent; 
+		border-right: rem(5px) solid transparent;
+		border-top: rem(0px) solid transparent;
+	}
+
+	@include tablets {
+		margin: 0 auto rem(10px);
+//		align-items: center;
+	}
+}
+
+.worker__trigger {
+
+	@include tablets {
+		display: inline-block;
+		font-size: rem(25px);
+
+		&:before {
+			margin-top: rem(10px);
+		}
+	}
+}
+
+.worker__content-wrapper {
+	height: rem(100px);
+	overflow: hidden;
+	transition: height .9s;
+	display: none;
+}
+
+.worker__content {
+//	@extend %clearfix;
+//	padding-top: rem(14px);
+//	display: none;
+	display: flex;
+//	padding-left: 1rem;
+
+	@include tablets {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+//		padding: 0 25%;
+	}
+}
+
+.worker__pic {
+	text-align: center;
+	flex-shrink: 0;
+//	width: 30%;
+
+	@include tablets {
+		margin-bottom: rem(15px);
+	}
+}
+
+.worker__img {
+	@include inlineblock();
+	width: rem(100px);
+	height: rem(100px);
+//	flex-shrink: 0;
+//	@include cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+}
+
+.worker__text {
+	width: 70%;
+	font-size: rem(14px);
+	line-height: rem(24px);
+	margin-left: rem(20px);
+}
+
+.worker__pic, .worker__text {
+//	float: left;
+
+	@include tablets {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+.worker__title {
+	@include ubuntu(bold);
+//	font-size: rem(14px);
+	color: #fff;
+	margin-bottom: rem(14px);
+}
+
+.worker__text-content {
+	@include ubuntu(light);
+	color: #fff;
+//	font-size: rem(14px);
+}

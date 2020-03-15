@@ -1,25 +1,48 @@
 .plus{
   width: calc(100% / 3 - 26px);
   text-align: center;
+
+  @include phones {
+    display: flex;
+    flex-direction: row;
+    width: initial;
+    margin-bottom: rem(35px);
+  }
 }
 
 .plus__img {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
+
+  @include phones {
+    width: rem(100px);
+    height: rem(100px);
+    svg {
+      min-width: 95%;
+    }
+  }
 }
 
-.plus__title {
-  font-size: 24px;
+.plus__text {
+  @include phones {
+    text-align: left;
+    width: 70%;
+    padding-left: rem(15px);
+  }
+}
+
+.plus__text--title {
+  font-size: rem(24px);
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.6;
+  line-height: rem(24px);
+  // letter-spacing: -0.6;
   @include lifehack();
 }
 
-.plus__description {
+.plus__text--description {
   opacity: .8;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: rem(14px);
+  line-height: rem(24px);
   @include ubuntu(light);
 }
