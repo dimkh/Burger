@@ -23,30 +23,30 @@
 	@extend %clearfix;
 }
 
-.eat-menu__acco--item {
+.eat-menu__acco-item {
 	float: left;
 	height: 100%;
 
 	&:hover {
-		.eat-menu__acco--trigger-text {
+		.eat-menu__acco-trigger-text {
 			color: $yellow;
 		}
 	}
 
 	&-active {
-		.eat-menu__acco--trigger-text {
+		.eat-menu__acco-trigger-text {
 			color: $yellow;
 		}		
-		.eat-menu__acco--content {
+		.eat-menu__acco-content {
 			width: rem(320px);
 		}
-		.eat-menu__acco--text {
+		.eat-menu__acco-text {
 			display: inherit;
 		}
 	}
 }
 
-.eat-menu__acco--trigger {
+.eat-menu__acco-trigger {
 	width: rem(80px);
 	display: block;
 	height: 100%;
@@ -60,7 +60,7 @@
   }
 }
 
-.eat-menu__acco--trigger-text {
+.eat-menu__acco-trigger-text {
 	font-size: rem(40px);
 	color: #fff;
 	@include gagalin;
@@ -78,7 +78,7 @@
   }
 }
 
-.eat-menu__acco--content {
+.eat-menu__acco-content {
 	height: 100%;
 	float: left;
 	background: rgba(#2f3234, .93);
@@ -86,7 +86,7 @@
 	overflow: hidden;
 }
 
-.eat-menu__acco--text {
+.eat-menu__acco-text {
 	@include ubuntu(light);
 	font-size: rem(14px);
 	color: #fff;

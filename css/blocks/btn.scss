@@ -12,6 +12,13 @@
     margin-left: rem(15px);
   }
 
+  &--slider {
+    color: white;
+    height: rem(35px);
+    margin-left: rem(30px);
+    margin-bottom: rem(16px);
+  }
+  
   &--feedback {
     color: white;
     border-color: $black;

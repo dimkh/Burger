@@ -11,7 +11,7 @@
 
 <body>
   <div class="wrapper">
-    <section class="section section--align-top welcome">
+    <section class="section section--align-top welcome" id="welcome">
       <div class="container welcome__container">
         <header class="header">
           <div class="logo">
@@ -23,28 +23,29 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">О нас</a>
+                  <a href="#features" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Бургеры</a>
+                  <a href="#slider" class="menu__link">Бургеры</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Команда</a>
+                  <a href="#team" class="menu__link">Команда</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Меню</a>
+                  <a href="#eat-menu" class="menu__link">Меню</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#feedback" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Контакты</a>
+                  <a href="#map-id" class="menu__link">Контакты</a>
                 </li>
               </ul>
             </nav>
             <div class="header__links">
               <a class="btn btn--welcome" href="#">Заказать</a>
-              <a class="hamburger-menu-link" href="#">
+              <!-- <a class="hamburger-menu-link hamburger-closed" href="#"> -->
+              <a class="hamburger-menu-link" href="#">                
                 <div class="hamburger-menu-link__bars"></div>
               </a>
             </div>
@@ -64,9 +65,32 @@
           </svg>
         </a>
       </div>
+      <nav class="modal-menu">
+        <ul class="modal-menu__list">
+          <li class="modal-menu__item">
+            <a href="#features" class="modal-menu__link">О нас</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#slider" class="modal-menu__link">Бургеры</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#team" class="modal-menu__link">Команда</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#eat-menu" class="modal-menu__link">Меню</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#feedback" class="modal-menu__link">Отзывы</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#map-id" class="modal-menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
     </section>
 
-    <section class="section features">
+    <section class="section features" id="features">
       <div class="container">
         <h2 class="section__title section__title--centered section__title--color-black">Мы лучшие</h2>
         <ul class="features__pluses">
@@ -115,7 +139,122 @@
       </div>
     </section>
 
-    <section class="section team">
+    <section class="section slider-section" id="slider">
+      <div class="slider">
+        <aside class="slider__left-side">
+          <a href="#" class="scroll scroll--left">
+            <svg class="scroll__icon-left">
+              <use xlink:href="./img/sprite/sprite.svg#icon-arrow-scroll"></use>
+            </svg>
+          </a>
+        </aside>
+        <div class="slide">
+          <div class="slide__photo">
+            <div class="composition">
+              <div class="composition__content">
+                <svg class="composition__content-img">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-burger"></use>
+                </svg>
+                <div class="composition__content-text">Состав</div>
+              </div>
+              <div class="composition__structure">
+                <table class="composition__table">
+                  <tbody class="composition__table-body">
+                    <tr class="composition__table-row">
+                      <td class="composition__table-col">
+                        <svg class="composition__table-icon composition__table-icon--beef">
+                          <use xlink:href="./img/sprite/sprite.svg#icon-beef"></use>
+                        </svg>            
+                      </td>
+                      <td class="composition__table-col composition__table--title">Говядина</td>
+                      <td class="composition__table-col composition__table--weight">300 г</td>
+                    </tr>
+                    <tr class="composition__table-row">
+                      <td class="composition__table-col">
+                        <svg class="composition__table-icon">
+                          <use xlink:href="./img/sprite/sprite.svg#icon-buns"></use>
+                        </svg>            
+                      </td>
+                      <td class="composition__table-col composition__table--title">Булочки</td>
+                      <td class="composition__table-col composition__table--weight">100 г</td>
+                    </tr>
+                    <tr class="composition__table-row">
+                      <td class="composition__table-col">
+                        <svg class="composition__table-icon">
+                          <use xlink:href="./img/sprite/sprite.svg#icon-salad"></use>
+                        </svg>            
+                      </td>
+                      <td class="composition__table-col composition__table--title">Зелень</td>
+                      <td class="composition__table-col composition__table--weight">70 г</td>
+                    </tr>
+                    <tr class="composition__table-row">
+                      <td class="composition__table-col">
+                        <svg class="composition__table-icon">
+                          <use xlink:href="./img/sprite/sprite.svg#icon-sauce"></use>
+                        </svg>            
+                      </td>
+                      <td class="composition__table-col composition__table--title">Соус</td>
+                      <td class="composition__table-col composition__table--weight">150 г</td>
+                    </tr>
+                    <tr class="composition__table-row">
+                      <td class="composition__table-col">
+                        <svg class="composition__table-icon">
+                          <use xlink:href="./img/sprite/sprite.svg#icon-cucumber"></use>
+                        </svg>            
+                      </td>
+                      <td class="composition__table-col composition__table--title">Овощи</td>
+                      <td class="composition__table-col composition__table--weight">200 г</td>
+                    </tr>
+                    <tr class="composition__table-row">
+                      <td class="composition__table-col">
+                        <svg class="composition__table-icon">
+                          <use xlink:href="./img/sprite/sprite.svg#icon-cheese"></use>
+                        </svg>            
+                      </td>
+                      <td class="composition__table-col composition__table--title">Сыр</td>
+                      <td class="composition__table-col composition__table--weight">80 г</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <img src="./img/slider/dark_burger.png" alt="" class="slide__photo-img">
+            <div class="calories">
+              <div class="calories__content">
+                <svg class="calories__content-img">
+                  <use xlink:href="./img/sprite/sprite.svg#icon-kkal"></use>
+                </svg>
+                <div class="calories__content-kkal">1200</div>
+                <div class="calories__content-text">ккал</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide__content">
+            <h2 class="section__title section__title--color-white">Dark beef burger</h2>
+            <div class="slide__content-description">
+              <p>
+                Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра
+                эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотичекого соуса
+                чурасхо.
+              </p>
+            </div>
+            <div class="slide__content-order">
+              <div class="slide__content-order-price"><span class="slide__content-order-price-num">500</span> рублей</div>
+              <a href="#" class="btn btn--slider">Заказать</a>
+            </div>
+          </div>
+        </div>
+        <aside class="slider__right-side">
+          <a href="#" class="scroll scroll--right">
+            <svg class="scroll__icon-right">
+              <use xlink:href="./img/sprite/sprite.svg#icon-arrow-scroll"></use>
+            </svg>
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section team" id="team">
       <div class="team__section">
         <div class="team__section-container">
           <h2 class="section__title">Команда</h2>
@@ -186,15 +325,15 @@
       </div>
     </section>
 
-    <section class="section eat-menu">
+    <section class="section eat-menu" id="eat-menu">
       <h2 class="section__title section__title--color-white eat-menu__title">Меню</h2>
       <ul class="eat-menu__acco">
-        <li class="eat-menu__acco--item">
-          <a class="eat-menu__acco--trigger" href="#" style="background-image: url('./img/menu/meat.jpg')">
-            <div class="eat-menu__acco--trigger-text">Для мясоедов</div>
+        <li class="eat-menu__acco-item">
+          <a class="eat-menu__acco-trigger" href="#" style="background-image: url('./img/menu/meat.jpg')">
+            <div class="eat-menu__acco-trigger-text">Для мясоедов</div>
           </a>
-          <div class="eat-menu__acco--content">
-            <div class="eat-menu__acco--text">
+          <div class="eat-menu__acco-content">
+            <div class="eat-menu__acco-text">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rerum impedit repellendus molestias
                 quidem amet sit, suscipit autem maiores est odio, laborum error esse itaque incidunt sunt minus eaque
@@ -203,12 +342,12 @@
             </div>
           </div>
         </li>
-        <li class="eat-menu__acco--item eat-menu__acco--item-active">
-          <a class="eat-menu__acco--trigger" href="#" style="background-image: url('./img/menu/vegan.jpg')">
-            <div class="eat-menu__acco--trigger-text">Вегетарианское</div>
+        <li class="eat-menu__acco-item eat-menu__acco-item-active">
+          <a class="eat-menu__acco-trigger" href="#" style="background-image: url('./img/menu/vegan.jpg')">
+            <div class="eat-menu__acco-trigger-text">Вегетарианское</div>
           </a>
-          <div class="eat-menu__acco--content">
-            <div class="eat-menu__acco--text">
+          <div class="eat-menu__acco-content">
+            <div class="eat-menu__acco-text">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus esse quos, hic accusamus
                 laudantium dolorum. Quia veritatis iusto modi, assumenda, adipisci maxime, fugit fugiat nisi fuga minima
@@ -222,12 +361,12 @@
             </div>
           </div>
         </li>
-        <li class="eat-menu__acco--item">
-          <a class="eat-menu__acco--trigger" href="#" style="background-image: url('./img/menu/diet.jpg')">
-            <div class="eat-menu__acco--trigger-text">Диетическое</div>
+        <li class="eat-menu__acco-item">
+          <a class="eat-menu__acco-trigger" href="#" style="background-image: url('./img/menu/diet.jpg')">
+            <div class="eat-menu__acco-trigger-text">Диетическое</div>
           </a>
-          <div class="eat-menu__acco--content">
-            <div class="eat-menu__acco--text">
+          <div class="eat-menu__acco-content">
+            <div class="eat-menu__acco-text">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugit dolorum quibusdam omnis blanditiis
                 ducimus dignissimos accusamus atque enim eaque architecto sequi esse quaerat modi quisquam, aliquid
@@ -239,7 +378,7 @@
       </ul>
     </section>
 
-    <section class="feedback-section">
+    <section class="feedback-section" id="feedback">
       <ul class="feedback">
         <li class="feedback__elem">
           <img src="./img/feedback/eater01.png" alt="Вкусивший бургер" class="feedback__img">
@@ -340,7 +479,7 @@
       </ul>
     </section>
 
-    <section class="section order">
+    <section class="section order" id="order">
       <div class="container">
         <h2 class="section__title section__title--centered">Закажите доставку</h2>
         <form class="order__form">
@@ -417,7 +556,7 @@
       </div>
     </section>
 
-    <section class="section map">
+    <section class="section map" id="map-id">
       <div class="yandex-map"></div>
       <footer class="footer">
         <div class="container footer__container">
@@ -496,6 +635,9 @@
     </div>
 
   </div>
+
+  <script src="js/openmenu.js"></script>
+
 </body>
 
 </html>

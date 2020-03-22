@@ -1,0 +1,88 @@
+.composition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: rem(90px);
+  height: rem(90px);
+  border-radius: 5px;
+  background-color: $red;
+  opacity: 0.4;
+  z-index: 5;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+.composition:hover .composition__structure {
+  left: 100%;
+  opacity: 1;
+}
+
+.composition__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  // width: 80%;
+  z-index: 10;
+
+  &-img {
+    width: rem(46px);
+    height: rem(44px);
+    margin-top: rem(14px);
+  }
+
+  &-text {
+    @include gagalin();
+    color: white;
+    font-size: rem(14px);
+    margin-top: rem(5px);
+  }
+}
+
+.composition__structure {
+  position: absolute;
+  cursor: initial;
+  left: -9999px;
+  top: 0;
+  background: rgba(white, .9);
+  color: $black;
+  border-radius: 5px;
+  width: rem(280px);
+  padding: rem(16px);
+  opacity: 0;
+  transition: .2;
+
+  &:hover {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.composition__table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.composition__table-col {
+  padding: rem(5px);
+  font-size: rem(14px);
+}
+
+.composition__table--title {
+  font-weight: 500;
+  padding-left: rem(20px);
+}
+
+.composition__table--weight {
+  text-align: right;
+  padding-left: rem(64px);
+  white-space: nowrap;
+  font-weight: 300;
+}
+
+.composition__table-icon {
+  width: rem(48px);
+  height: rem(48px);
+}

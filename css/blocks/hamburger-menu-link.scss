@@ -8,6 +8,7 @@
 
 	@include tablets {
 		display: flex;
+		z-index: 20;
 	}
 }
 
@@ -33,3 +34,30 @@
 		bottom: 0;
 	}
 }
+
+.hamburger-closed {
+	@include tablets {
+		display: block;	
+	}
+}
+
+.hamburger-closed {
+	.hamburger-menu-link__bars {
+		display: block;
+		& {
+			width: 0;
+			height: 0;
+		}
+	
+		&:before {
+			top: 0;
+			transform: rotate(45deg);
+		}
+	
+		&:after {
+			bottom: initial;
+			transform: rotate(-45deg);
+		}
+	}
+}
+	

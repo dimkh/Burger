@@ -1,0 +1,64 @@
+.slide {
+  position: relative;
+  display: flex;
+  height: 50%;
+  align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: rem(160px);
+
+  }
+}
+
+.slide__photo {
+  // width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slide__content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;   
+
+  @include tablets {
+    text-align: center;
+    width: 80%;
+    margin-top: rem(20px);
+  }
+
+  &-description {
+    font-size: rem(14px);
+    color: white;
+    line-height: rem(25px);
+  }
+
+  &-order {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    // padding-top: rem(20px);
+
+    @include tablets {
+      justify-content: center;
+    }
+  }
+
+  &-order-price {
+    color: $red;
+    @include gagalin();
+    font-size: rem(30px);
+
+    &-num {
+      font-size: rem(72px);
+    }
+  }
+}
+

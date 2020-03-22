@@ -1,0 +1,38 @@
+.modal-menu {
+  display: none;
+  &--active {
+    display: initial;
+  }
+  // @include tablets {
+  //   display: initial;
+  // }
+}
+
+.modal-menu__list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(black, .8);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: rem(24px);
+  font-weight: 500;
+  margin-bottom: rem(32px);
+}
+
+.modal-menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 0;
+}
