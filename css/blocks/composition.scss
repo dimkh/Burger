@@ -65,24 +65,24 @@
   border-spacing: 0;
 }
 
-.composition__table-col {
+.composition__col {
   padding: rem(5px);
   font-size: rem(14px);
 }
 
-.composition__table--title {
+.composition__title {
   font-weight: 500;
   padding-left: rem(20px);
 }
 
-.composition__table--weight {
+.composition__weight {
   text-align: right;
   padding-left: rem(64px);
   white-space: nowrap;
   font-weight: 300;
 }
 
-.composition__table-icon {
+.composition__icon {
   width: rem(48px);
   height: rem(48px);
 }

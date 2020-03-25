@@ -23,17 +23,18 @@
   color: white;
   opacity: .5;
 
-  &-img {
-    width: rem(60px);
-    height: rem(60px);
-    // opacity: .5;
-  }
+}
 
-  &-kkal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: rem(20px);
-  }
+.calories__img {
+  width: rem(60px);
+  height: rem(60px);
+  // opacity: .5;
+}
+
+.calories__kkal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: rem(20px);
 }

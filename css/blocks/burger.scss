@@ -48,7 +48,11 @@
 
 .burger__img {
   margin-right: rem(10px);
+  max-width: 42%;
 
+  @include tablets {
+    min-width: 48%;
+  }
   @include phones {
     max-width: 80%;
   }

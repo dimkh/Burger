@@ -1,6 +1,6 @@
 .scroll-down {
   position: absolute;
-  bottom: rem(40px);
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   border: transparent;
@@ -9,4 +9,5 @@
 
 .scroll-down__icon {
   width: rem(32px);
+  height: rem(32px);
 }

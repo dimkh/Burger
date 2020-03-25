@@ -57,7 +57,7 @@
   }
   
   @include phones {
-    padding-top: 25%;
+    padding-top: 15%;
   }
 }
 
@@ -80,11 +80,14 @@
 .feedback__info--feed {
   font-size: rem(14px);
   line-height: rem(24px);
+  overflow: hidden;
+  max-height: calc(1.5rem * 6);
   @include ubuntu(light);
   margin-bottom: rem(10px);
 
   @include tablets {
     line-height: rem(20px);
+    max-height: calc(1.25rem * 4);
   }
 
   @include phones {
