@@ -16,6 +16,7 @@
 .slider__scroll {
   width: rem(60px);
   display: flex;
+  cursor: pointer;
 
   &--left {
     justify-content: flex-end;

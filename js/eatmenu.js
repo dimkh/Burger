@@ -3,8 +3,6 @@
   const eatMenuList = document.querySelector('.eat-menu__acco');
   let eatMenuActive;
 
-  console.log(eatMenuActive);
-
   eatMenuList.addEventListener('click', function(e) {
     
     // Клик по ссылке обновляет страницу - нам это не нужно

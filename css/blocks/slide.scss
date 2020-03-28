@@ -1,17 +1,29 @@
 .slide {
   position: relative;
-  display: flex;
+  // display: flex;
   height: 90%;
-  align-items: center;
+  // align-items: center;
+  display: none;
 
   @include tablets {
-    flex-direction: column;
-    justify-content: flex-start;
+    // flex-direction: column;
+    // justify-content: flex-start;
     height: 100%;
     margin-top: rem(160px);
 
   }
 }
+
+.slide--active {
+  display: flex;
+  align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
 
 .slide__photo {
   // width: 50%;
@@ -19,6 +31,7 @@
   display: flex;
   // flex-direction: column;
   justify-content: center;
+  margin-right: rem(16px);
 }
 
 .slide__photo-img {
