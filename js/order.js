@@ -3,10 +3,9 @@ const bntOrder = document.querySelector('.order__form-button-send');
 const orderMessage = createOverlay(template);
 var orderFormData = new FormData();
 
-bntOrder.addEventListener('click', e => {
+bntOrder.addEventListener('click', function(e)  {
   let message = 'Запрос: ';
   e.preventDefault();
-  orderMessage.open();
   if (validateForm(orderForm)) {
     orderFormData.append('name', orderForm.elements.customer.value);
     orderFormData.append('phone', orderForm.elements.phone.value);
@@ -17,12 +16,13 @@ bntOrder.addEventListener('click', e => {
     xhr.responseType = 'json';
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
     xhr.send(orderFormData);
-    xhr.addEventListener('load', e => {
-      console.log(xhr.response);
+    xhr.addEventListener('load', function(e) {
+      orderMessage.open();
       orderMessage.setContent(xhr.response.message);
     });
   }
   else {
+    orderMessage.open();
     orderMessage.setContent('Ошибка при заполнении данных в форме! Проверьте имя и телефон!');
   }
 });

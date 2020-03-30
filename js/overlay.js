@@ -1,9 +1,9 @@
 const openButton = document.querySelector(".feedback");
 const template = document.querySelector("#overlayTemplate").innerHTML;
+const bodyScroll = document.querySelector('body');
 const overlay = createOverlay(template);
-const mainMenuFeedback = document.querySelector('.menu__link--feedback');
 
-openButton.addEventListener("click", e => {
+openButton.addEventListener("click", function(e) {
   e.preventDefault();
   if (e.target.classList.contains("btn--feedback")) {
     overlay.open();
@@ -20,19 +20,22 @@ function createOverlay(template) {
   const contentElement = fragment.querySelector(".overlay__content");
   const closeElement = fragment.querySelector(".overlay__close");
   
-  overlayElement.addEventListener("click", e => {
+  overlayElement.addEventListener("click", function(e) {
     if (e.target === overlayElement) {
       closeElement.click();
     }
   });
-  closeElement.addEventListener("click", () => {
+  closeElement.addEventListener("click", function(e) {
+    e.preventDefault();
+    contentElement.innerHTML = '';
+    bodyScroll.style.overflow = '';
     document.body.removeChild(overlayElement);
-    mainMenuFeedback.click();
   });
 
   return {
     open() {
       document.body.appendChild(overlayElement);
+      bodyScroll.style.overflow = 'hidden';
     },
     close() {
       closeElement.click();

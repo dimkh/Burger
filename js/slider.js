@@ -16,17 +16,19 @@
   function loop(direction, e) {
     e.preventDefault();
     
-    // Вправо и еще не последний слайд - показываем очередной
-    if (direction === 'right' && elemActive < countItems) {
-      list.children[elemActive-1].classList.remove('slide--active');
+    // Текущий слайд стал неактивным
+    list.children[elemActive-1].classList.remove('slide--active');
+    
+    if (direction === 'right') {
+      // Был последний слайд - показываем первый
+      if (elemActive === countItems) { elemActive = 0; }
       list.children[elemActive++].classList.add('slide--active');
     }
 
-    // Влево и не первый слайд - показываем предыдущий
-    if (direction === 'left' && elemActive > 1) {
-      list.children[elemActive-1].classList.remove('slide--active');
+    if (direction === 'left') {
+      // Был первый слайд - показываем последний
+      if(elemActive === 1) { elemActive = countItems + 1; }
       list.children[--elemActive-1].classList.add('slide--active');
-      // elemActive--;
     }
   }
 

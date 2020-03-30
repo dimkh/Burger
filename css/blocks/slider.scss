@@ -17,6 +17,8 @@
   width: rem(60px);
   display: flex;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 
   &--left {
     justify-content: flex-end;

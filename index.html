@@ -35,7 +35,7 @@
                   <a href="#eat-menu" class="menu__link">Меню</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#feedback" class="menu__link menu__link--feedback" id="menu__item-feedback">Отзывы</a>
+                  <a href="#feedback" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
                   <a href="#map-id" class="menu__link">Контакты</a>
@@ -43,7 +43,7 @@
               </ul>
             </nav>
             <div class="header__links">
-              <a class="btn btn--welcome" href="#">Заказать</a>
+              <a class="btn btn--welcome" href="#order">Заказать</a>
               <!-- <a class="hamburger-menu-link hamburger-closed" href="#"> -->
               <a class="hamburger-menu-link" href="#">                
                 <div class="hamburger-menu-link__bars"></div>
@@ -142,11 +142,11 @@
     <section class="section slider-section" id="slider">
       <div class="container slider-container">
         <div class="slider-container__content slider">
-          <div class="slider__scroll slider__scroll--left">
+          <button type="button" class="slider__scroll slider__scroll--left">
             <svg class="slider__scroll-icon-left">
               <use xlink:href="./img/sprite/sprite.svg#icon-arrow-scroll"></use>
             </svg>
-          </div>
+          </button>
           <ul class="slider__list">
             <li class="slider__list-item slide slide--active">
               <div class="slide__photo">
@@ -240,7 +240,7 @@
                 </div>
                 <div class="slide__order">
                   <div class="slide__price"><span class="slide__price-num">500</span> рублей</div>
-                  <a href="#" class="btn btn--slider">Заказать</a>
+                  <a href="#order" class="btn btn--slider">Заказать</a>
                 </div>
               </div>
             </li>
@@ -336,7 +336,7 @@
                 </div>
                 <div class="slide__order">
                   <div class="slide__price"><span class="slide__price-num">500</span> рублей</div>
-                  <a href="#" class="btn btn--slider">Заказать</a>
+                  <a href="#order" class="btn btn--slider">Заказать</a>
                 </div>
               </div>
             </li>
@@ -432,7 +432,7 @@
                 </div>
                 <div class="slide__order">
                   <div class="slide__price"><span class="slide__price-num">500</span> рублей</div>
-                  <a href="#" class="btn btn--slider">Заказать</a>
+                  <a href="#order" class="btn btn--slider">Заказать</a>
                 </div>
               </div>
             </li>
@@ -528,7 +528,7 @@
                 </div>
                 <div class="slide__order">
                   <div class="slide__price"><span class="slide__price-num">500</span> рублей</div>
-                  <a href="#" class="btn btn--slider">Заказать</a>
+                  <a href="#order" class="btn btn--slider">Заказать</a>
                 </div>
               </div>
             </li>
@@ -624,16 +624,16 @@
                 </div>
                 <div class="slide__order">
                   <div class="slide__price"><span class="slide__price-num">500</span> рублей</div>
-                  <a href="#" class="btn btn--slider">Заказать</a>
+                  <a href="#order" class="btn btn--slider">Заказать</a>
                 </div>
               </div>
             </li>
           </ul>
-          <div class="slider__scroll slider__scroll--right">
+          <button type="button" class="slider__scroll slider__scroll--right">
             <svg class="slider__scroll-icon-right">
               <use xlink:href="./img/sprite/sprite.svg#icon-arrow-scroll"></use>
             </svg>
-          </div>
+          </button>
         </div>  
       </div>
     </section>
@@ -989,31 +989,28 @@
     <div class="radio">
       <ul class="radio__list">
         <li class="radio__elem radio__active">
-          <a href="#" class="radio__elem--link"></a>
+          <a href="#welcome" class="radio__elem--link"></a>
         </li>
         <li class="radio__elem">
-          <a href="#" class="radio__elem--link"></a>
+          <a href="#features" class="radio__elem--link"></a>
         </li>
         <li class="radio__elem">
-          <a href="#" class="radio__elem--link"></a>
+          <a href="#slider" class="radio__elem--link"></a>
         </li>
         <li class="radio__elem">
-          <a href="#" class="radio__elem--link"></a>
+          <a href="#team" class="radio__elem--link"></a>
         </li>
         <li class="radio__elem">
-          <a href="#" class="radio__elem--link"></a>
+          <a href="#eat-menu" class="radio__elem--link"></a>
         </li>
         <li class="radio__elem">
-          <a href="#" class="radio__elem--link"></a>
+          <a href="#feedback" class="radio__elem--link"></a>
         </li>
         <li class="radio__elem">
-          <a href="#" class="radio__elem--link"></a>
+          <a href="#order" class="radio__elem--link"></a>
         </li>
         <li class="radio__elem">
-          <a href="#" class="radio__elem--link"></a>
-        </li>
-        <li class="radio__elem">
-          <a href="#" class="radio__elem--link"></a>
+          <a href="#map-id" class="radio__elem--link"></a>
         </li>
       </ul>
     </div>
@@ -1035,6 +1032,7 @@
   <script src="js/slider.js"></script>
   <script src="js/overlay.js"></script>
   <script src="js/order.js"></script>
+  <script src="js/radio.js"></script>
 
 </body>
 

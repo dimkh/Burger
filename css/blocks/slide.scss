@@ -17,6 +17,7 @@
 .slide--active {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   @include tablets {
     flex-direction: column;

@@ -1565,6 +1565,8 @@ img {
   width: 3.75rem;
   display: flex;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 .slider__scroll--left {
   justify-content: flex-end;
@@ -1598,6 +1600,7 @@ img {
 .slide--active {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .slide--active {
