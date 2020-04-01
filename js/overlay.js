@@ -1,5 +1,5 @@
 const openButton = document.querySelector(".feedback");
-const template = document.querySelector("#overlayTemplate").innerHTML;
+let template = document.querySelector("#overlayTemplate").innerHTML;
 const bodyScroll = document.querySelector('body');
 const overlay = createOverlay(template);
 
@@ -20,6 +20,8 @@ function createOverlay(template) {
   const contentElement = fragment.querySelector(".overlay__content");
   const closeElement = fragment.querySelector(".overlay__close");
   
+  overlayElement.style.display = 'none';
+
   overlayElement.addEventListener("click", function(e) {
     if (e.target === overlayElement) {
       closeElement.click();
@@ -42,6 +44,7 @@ function createOverlay(template) {
     },
     setContent(content) {
       contentElement.innerHTML = content;
+      contentElement.parentNode.parentNode.style.display = 'flex';
     }
   };
 }

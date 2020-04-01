@@ -29,12 +29,17 @@
 		color: white;
 	}
 
-  @include tablets {
-    margin-bottom: 7%;
+  @include laptop {
+    font-size: rem(56px);
+    margin-bottom: rem(40px);
   }
-  
+
+  @include tablets {
+    margin-bottom: 3%;
+  }
+
   @include phones {
-    font-size: rem(57px);
+    font-size: rem(54px);
   }
 }
 
@@ -42,4 +47,9 @@
   background: black;
   height: 100vh;
   min-height: rem(650px);
+}
+
+.slider-section {
+  background-color: $yellow;
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
 }

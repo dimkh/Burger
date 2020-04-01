@@ -16,7 +16,7 @@
 		margin-bottom: 0;
 	}
 
-	&+.active {
+	&-active {
 		.worker__name {
 			color: $yellow;
 

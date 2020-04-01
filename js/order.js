@@ -14,7 +14,7 @@ bntOrder.addEventListener('click', function(e)  {
 
     const xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
-    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail/fail');
     xhr.send(orderFormData);
     xhr.addEventListener('load', function(e) {
       orderMessage.open();

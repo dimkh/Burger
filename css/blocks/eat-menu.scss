@@ -20,7 +20,9 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-	@extend %clearfix;
+	width: auto;
+	// max-width: 70%;
+	// @extend %clearfix;
 }
 
 .eat-menu__acco-item {
@@ -36,14 +38,34 @@
 	&-active {
 		.eat-menu__acco-trigger-text {
 			color: $yellow;
+			padding-top: 12px;
 		}		
 		.eat-menu__acco-content {
 			width: rem(320px);
+
+			@include tablets {
+				width: rem(240px);
+			}
+			
+			@include phones {
+				width: 85vw;
+			}
 		}
 		.eat-menu__acco-text {
 			display: inherit;
 		}
 	}
+}
+
+.eat-menu__acco-item-active {
+	@include phones {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100vw;
+		z-index: 10;
+		}
 }
 
 .eat-menu__acco-trigger {
@@ -56,7 +78,7 @@
   position: relative;
   
   @include phones {
-    width: rem(50px);
+    width: 15vw;
   }
 }
 
@@ -74,7 +96,7 @@
   margin-top: rem(-20px);
 
   @include phones {
-    font-size: rem(26px);
+		font-size: rem(26px);
   }
 }
 
