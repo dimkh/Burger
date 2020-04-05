@@ -1,0 +1,49 @@
+// Colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+// Resolutions
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+
+@import "./layout/*.scss";
+// @import "./layout/normalize.scss";
+// @import "./layout/fonts.scss";
+// @import "./layout/media.scss";
+// @import "./layout/mixins.scss";
+// @import "./layout/layout.scss";
+
+@import "./blocks/*.scss";
+// @import "./blocks/section.scss";
+// @import "./blocks/welcome.scss";
+// @import "./blocks/header.scss";
+// @import "./blocks/logo.scss";
+// @import "./blocks/menu.scss";
+// @import "./blocks/btn.scss";
+// @import "./blocks/burger.scss";
+// @import "./blocks/scroll-down.scss";
+// @import "./blocks/features.scss";
+// @import "./blocks/plus.scss";
+// @import "./blocks/feedback.scss";
+// @import "./blocks/radio.scss";
+// @import "./blocks/order.scss";
+// @import "./blocks/hamburger-menu-link.scss";
+// @import "./blocks/team.scss";
+// @import "./blocks/worker.scss";
+// @import "./blocks/eat-menu.scss";
+// @import "./blocks/map.scss";
+// @import "./blocks/footer.scss";
+// @import "./blocks/socials.scss";
+// @import "./blocks/slider.scss";
+// @import "./blocks/slide.scss";
+// @import "./blocks/composition.scss";
+// @import "./blocks/calories.scss";
+// @import "./blocks/modal-menu.scss";
+// @import "./blocks/overlay.scss";
+// @import "./blocks/player-section.scss";
+// @import "./blocks/player.scss";

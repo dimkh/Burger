@@ -18,6 +18,18 @@
 
 }
 
+.player-active {
+  .player__splash {
+    display: none;
+  }
+}
+
+.player-paused {
+  .player__splash {
+    display: none;
+  }
+}
+
 .player__splash {
   content: "";
   position: absolute;
@@ -25,9 +37,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("../img/player/splash.png") center center / cover no-repeat;
+  background: url("../img/player/splash.jpg") center center / cover no-repeat;
   cursor: pointer;
-  display: none;
+  // display: none;
 }
 
 .player__controls {
@@ -46,6 +58,30 @@
   height: 100%;
 }
 
+.player-active {
+  .player__start-icon {
+    display: none;
+  }
+  .player__pause-icon {
+    display: "block";
+  }
+}
+
+.player-paused {
+  .player__start-icon {
+    display: "block";
+  }
+  .player__pause-icon {
+    display: none;
+  }
+}
+
+.player-splashed {
+  .player__pause-icon {
+    display: none;
+  }
+}
+
 .player__start-icon {
   width: 35px;
   height: 100%;
@@ -56,7 +92,7 @@
   height: 60%;
   border: none;
   position: relative;
-  display: none;
+  // display: none;
 
   &:before, &:after {
     content: "";
