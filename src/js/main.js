@@ -1,6 +1,7 @@
 const sections = $(".section");
 const radioes = $(".radio__elem");
 const display = $(".maincontent");
+let modal;
 
 let inScroll = false;
 
@@ -16,6 +17,10 @@ const countSectionPosition = (sectionEq) => {
 const performTransition = sectionEq => {
 
   if (inScroll) return;
+
+  // Если открыто модальное окно - не скроллим
+  modal = document.querySelector(".overlay__content");
+  if (modal !== null) return;
 
   inScroll = true;
 
