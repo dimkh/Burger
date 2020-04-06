@@ -30,15 +30,15 @@ function createOverlay(template) {
   });
   closeElement.addEventListener("click", function(e) {
     e.preventDefault();
-    contentElement.innerHTML = '';
-    bodyScroll.style.overflow = '';
+    // contentElement.innerHTML = '';
+    // bodyScroll.style.overflow = '';
     document.body.removeChild(overlayElement);
   });
 
   return {
     open() {
       document.body.appendChild(overlayElement);
-      bodyScroll.style.overflow = 'hidden';
+      // bodyScroll.style.overflow = 'hidden';
     },
     close() {
       closeElement.click();
